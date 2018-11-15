@@ -1,5 +1,5 @@
 
-# Creating an Initial Logistic Regression Model
+# Fitting a Logistic Regression Model - Lab2
 
 ## Introduction 
 
