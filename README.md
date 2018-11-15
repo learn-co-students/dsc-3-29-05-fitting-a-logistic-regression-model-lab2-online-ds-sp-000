@@ -6,6 +6,8 @@
 In this lab, we are going to fit a logistic regression model to a dataset concerning heart disease. Whether or not a patient has heart disease is indicated in the final column labelled 'target'. 1 is for positive for heart disease while 0 indicates no heart disease.
 
 ## Objectives
+You will be able to:
+
 * Understand and implement logistic regression
 * Compare testing and training errors
 
