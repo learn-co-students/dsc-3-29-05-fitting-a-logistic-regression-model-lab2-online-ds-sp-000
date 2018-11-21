@@ -1,5 +1,5 @@
 
-# Fitting a Logistic Regression Model - Lab2
+# Logistic Regression in SciKit Learn - Lab
 
 ## Introduction 
 
