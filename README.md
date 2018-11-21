@@ -1,5 +1,5 @@
 
-# Fitting a Logistic Regression Model - Lab2
+# Logistic Regression in SciKit Learn - Lab
 
 ## Introduction 
 
@@ -10,6 +10,8 @@ You will be able to:
 
 * Understand and implement logistic regression
 * Compare testing and training errors
+
+## Let's get started!
 
 
 ```python
@@ -155,7 +157,7 @@ df.head()
 
 
 
-# Define appropriate X and y
+## Define appropriate X and y
 Recall the dataset is whether or not a patient has heart disease and is indicated in the final column labelled 'target'. With that, define appropriate X and y in order to model whether or not a patient has heart disease.
 
 
@@ -165,7 +167,7 @@ X =
 y = 
 ```
 
-# Normalize the Data
+## Normalize the Data
 Normalize the data prior to fitting the model.
 
 
@@ -173,7 +175,7 @@ Normalize the data prior to fitting the model.
 #Your code here
 ```
 
-# Train Test Split
+## Train Test Split
 Split the data into train and test sets.
 
 
@@ -181,7 +183,7 @@ Split the data into train and test sets.
 #Your code here
 ```
 
-# Fit a model
+## Fit a model
 Fit an intial model to the training set. In SciKit Learn you do this by first creating an instance of the regression class. From there, then use the **fit** method from your class instance to fit a model to the training data.
 
 
@@ -190,7 +192,7 @@ logreg = LogisticRegression(fit_intercept = False, C = 1e12) #Starter code
 #Your code here
 ```
 
-# Predict
+## Predict
 Generate predictions for the train and test sets. Use the **predict** method from the logreg object.
 
 
@@ -198,7 +200,7 @@ Generate predictions for the train and test sets. Use the **predict** method fro
 #Your code here
 ```
 
-# Initial Evaluation
+## Initial Evaluation
 How many times was the classifier correct for the training set?
 
 
@@ -206,14 +208,14 @@ How many times was the classifier correct for the training set?
 #Your code here
 ```
 
-# How many times was the classifier correct for the test set?
+## How many times was the classifier correct for the test set?
 
 
 ```python
 #Your code here
 ```
 
-# Analysis
+## Analysis
 Describe how well you think this initial model is based on the train and test performance. Within your description, make note of how you evaluated perforamnce as compared to our previous work with regression.
 
 
