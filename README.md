@@ -11,6 +11,8 @@ You will be able to:
 * Understand and implement logistic regression
 * Compare testing and training errors
 
+## Let's get started!
+
 
 ```python
 #Starter Code
@@ -155,7 +157,7 @@ df.head()
 
 
 
-# Define appropriate X and y
+## Define appropriate X and y
 Recall the dataset is whether or not a patient has heart disease and is indicated in the final column labelled 'target'. With that, define appropriate X and y in order to model whether or not a patient has heart disease.
 
 
@@ -165,7 +167,7 @@ X = df[df.columns[:-1]]
 y = df.target
 ```
 
-# Normalize the Data
+## Normalize the Data
 Normalize the data prior to fitting the model.
 
 
@@ -304,7 +306,7 @@ df.head()
 
 
 
-# Train Test Split
+## Train Test Split
 Split the data into train and test sets.
 
 
@@ -314,7 +316,7 @@ Split the data into train and test sets.
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 ```
 
-# Fit a model
+## Fit a model
 Fit an intial model to the training set. In SciKit Learn you do this by first creating an instance of the regression class. From there, then use the **fit** method from your class instance to fit a model to the training data.
 
 
@@ -335,7 +337,7 @@ model_log
 
 
 
-# Predict
+## Predict
 Generate predictions for the train and test sets. Use the **predict** method from the logreg object.
 
 
@@ -345,7 +347,7 @@ y_hat_test = logreg.predict(X_test)
 y_hat_train = logreg.predict(X_train)
 ```
 
-# Initial Evaluation
+## Initial Evaluation
 How many times was the classifier correct for the training set?
 
 
@@ -367,7 +369,7 @@ print(pd.Series(residuals).value_counts(normalize=True))
     Name: target, dtype: float64
 
 
-# How many times was the classifier correct for the test set?
+## How many times was the classifier correct for the test set?
 
 
 ```python
@@ -388,7 +390,7 @@ print(pd.Series(residuals).value_counts(normalize=True))
     Name: target, dtype: float64
 
 
-# Analysis
+## Analysis
 Describe how well you think this initial model is based on the train and test performance. Within your description, make note of how you evaluated perforamnce as compared to our previous work with regression.
 
 Answers will vary. Students should generally be grappling with the notion of True Positives, False Positives, True Negatives, and False Negatives that were introduced previously. Hopefully they will be able to at least check the number of correct/incorrect predictions at this point.
